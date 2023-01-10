@@ -17,7 +17,7 @@ while True:
 		print("Creating Images........." + name)
 		cv2.imwrite(name, frame[y:y+h, x:x+w])
 		cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 0, 255), 3)
-		cv2.rectangle(frame, (x, y-40), (x + w, y), (0, 255, 0), -1)
+		#cv2.rectangle(frame, (x, y-40), (x + w, y), (0, 255, 0), -1)
 		cv2.putText(frame, "No Mask", (x+15 , y-15), cv2.FONT_HERSHEY_COMPLEX_SMALL, 0.75, (0, 0, 255), 1)
 
 	cv2.imshow("WindowFrame", frame)
